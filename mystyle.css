@@ -1,8 +1,26 @@
 body {
-    background-color: lightblue;
+    /*background-color: #444444;*/
+    background-image: url('death-star.jpg');
+    margin: 0px;
+    text-align: center;
 }
 
 h1 {
-    color: navy;
-    margin-left: 20px;
+    color: #f0ebeb;
+    font-family: 'Nothing You Could Do', cursive;
+    margin-left: 50px;    
+}
+
+.main {
+    background-color: #9900008f;
+}
+
+.something {
+    background-image: url('death-star.jpg');
+    padding: 200px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading {
+    
 }
