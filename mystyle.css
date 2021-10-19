@@ -6,7 +6,8 @@ header {
 
 nav a {
     font-family: 'Source Code Pro', monospace;
-    font-size: 16px;
+    color: #f0ebeb;
+    font-size: 20px;
     margin: 6px;
     display: flex;
     flex-direction: row;
