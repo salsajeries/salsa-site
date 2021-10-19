@@ -4,15 +4,15 @@ header {
     text-align: right;
 }
 
-nav a {
+/*nav a {
     font-family: 'Source Code Pro', monospace;
     color: #f0ebeb;
     font-size: 20px;
-    margin: 6px;
+    /*margin: 6px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-}
+    justify-content: center;*/
+}*/
 
 body {
     background-color: #444444;
@@ -26,7 +26,11 @@ h1 {
     color: #f0ebeb;  
 }
 
-.nav {
+/*.nav {
     background-color: #9900008f;
     padding: 20px;
+}*/
+
+a:hover {
+    color: yellow;
 }
