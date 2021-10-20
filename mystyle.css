@@ -1,26 +1,31 @@
 header {
     font-family: 'Source Code Pro', monospace;
     color: #f0ebeb;
-    text-align: right;
+    text-align: left;
+}
+
+nav {
+    background-color: #9900008f;
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav a {
     font-family: 'Source Code Pro', monospace;
-    color: #635f5f;
+    color: #afaaaa;
     font-size: 20px;
     margin: 15px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    transition: color 0.5s ease-in-out;
+    transition: color 0.25s ease-in-out;
     text-decoration: none;
 }
 
-body {
-    background-color: #202020;
-    margin: 0px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
+a:hover {
+    color: white;
 }
 
 h1 {
@@ -28,14 +33,17 @@ h1 {
     color: #f0ebeb;
 }
 
-nav {
-    background-color: #9900008f;
-    padding: 3px;
-    position: fixed;
-    top: 0;
+table {
+    text-align: center;
     width: 100%;
 }
 
-a:hover {
-    color: white;
+body {
+    background-color: #202020;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    /*font-family: 'Source Code Pro', monospace;*/
+    color: #f0ebeb;
+    text-align: left;
 }
