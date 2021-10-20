@@ -24,6 +24,11 @@ nav a {
     text-decoration: none;
 }
 
+    /*margin: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;*/
+
 a:hover {
     color: white;
 }
@@ -46,4 +51,13 @@ body {
     /*font-family: 'Source Code Pro', monospace;*/
     color: #f0ebeb;
     text-align: left;
+}
+
+.nav {
+    background-color: #9900008f;
+    padding: 20px;
+}
+
+a:hover {
+    color: yellow;
 }
