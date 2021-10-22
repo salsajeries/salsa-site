@@ -2,20 +2,22 @@ header {
     font-family: 'Source Code Pro', monospace;
     color: #f0ebeb;
     text-align: left;
+    position: static
 }
 
 nav {
-    background-color: #9900008f;
-    
+    background-color: #990000af;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 nav a {
     font-family: 'Source Code Pro', monospace;
     color: #afaaaa;
     font-size: 20px;
+    font-style: bold;
     margin: 15px;
     display: flex;
     flex-direction: row;
@@ -24,11 +26,6 @@ nav a {
     text-decoration: none;
 }
 
-    /*margin: 6px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;*/
-
 a:hover {
     color: white;
 }
@@ -36,28 +33,53 @@ a:hover {
 h1 {
     font-family: 'Source Code Pro', monospace;
     color: #f0ebeb;
+    position: relative;  
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #f0ebeb; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
 }
 
-table {
+/*table {
     text-align: center;
     width: 100%;
-}
+}*/
 
 body {
     background-color: #202020;
-    padding: 20px;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
     /*font-family: 'Source Code Pro', monospace;*/
     color: #f0ebeb;
     text-align: left;
+    position: static;
 }
 
 .nav {
-    background-color: #9900008f;
+    background-color: #990000d8;
     padding: 20px;
 }
 
 a:hover {
-    color: yellow;
+    color: white;
+}
+
+
+
+
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #f0ebeb; }
 }
