@@ -57,5 +57,79 @@ body {
 }
 
 div {
+    justify-content: center;
     margin: 2%;
+}
+
+img {
+    width: 35vmax;
+    justify-content: left;
+    border: 5px solid #990000d8
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+
+    animation: typewriter;
+    animation-duration: 10s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+}
+
+.typing_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+
+    animation: typewriter_2;
+    animation-duration: 10s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+}
+
+.typing::after, .typing_2::after {
+    content: " |";
+    position: absolute;
+    right: 0;
+
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+}
+
+@keyframes typewriter {
+    0%, 50%, 100% {
+        width: 0;
+    }
+    60%, 90% {
+        width: 12em;
+    }
+}
+
+@keyframes typewriter_2 {
+    0%, 50%, 100% {
+        width: 0;
+    }
+    10%, 40% {
+        width: 9.5em;
+    }
+}
+
+@keyframes caret {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
 }
